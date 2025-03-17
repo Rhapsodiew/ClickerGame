@@ -2,11 +2,9 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
-import { ClickerModule } from './clicker/clicker.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
-import { UserClickerModule } from './user_clicker/user_clicker.module';
 
 @Module({
   imports: [
@@ -29,9 +27,9 @@ import { UserClickerModule } from './user_clicker/user_clicker.module';
       }),
     }),
     // Importation des modules métiers.
-    ClickerModule,
+    // ClickerModule,
     UsersModule,
-    UserClickerModule
+    // UserClickerModule
   ],
   controllers: [AppController],
   providers: [AppService],
