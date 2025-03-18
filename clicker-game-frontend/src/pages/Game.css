@@ -1,0 +1,72 @@
+.App {
+    background-color: #1b1f1b;
+    color: beige;
+    font-family: Arial, sans-serif;
+  }
+  
+  .Page {
+    padding: 20px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .clicker-col, .improvements-col, .modules-col {
+    padding: 20px;
+    background-color: #2a2f2a;
+    border-radius: 8px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  button[style*="background-color: #f44336"] {
+    background-color: #f44336;
+  }
+  
+  button[style*="background-color: #f44336"]:hover {
+    background-color: #e53935;
+  }
+  
+  .improvement-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #3a403a;
+    border-radius: 5px;
+  }
+  
+  .improvement-item button {
+    background-color: #ff5722;
+  }
+  
+  .improvement-item button:hover {
+    background-color: #f44336;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
