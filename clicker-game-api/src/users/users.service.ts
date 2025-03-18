@@ -24,6 +24,10 @@ export class UsersService {
     return await this.userRepository.findOne({where : {id}});
   }
 
+  async findOneByUsername(username: string) {
+    return await this.userRepository.findOne({ where : { username }});
+  }
+
   async incrementScore(id: number, updataUserDto) {
     const userStats = await this.findOne(+id);
     const score = userStats.score;
