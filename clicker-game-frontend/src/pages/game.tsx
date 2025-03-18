@@ -49,6 +49,8 @@ function App() {
   const [improvements, setImprovements] = useState([
     { id: 1, name: 'Clicker +2', cost: 1000, effect: (id: number) => incrementClick(id, 2).then((response) => setCurrentUser((prevState) => ({...prevState, nb_per_click: prevState.nb_per_click + 2,})) )},
     { id: 2, name: 'Autoclicker', cost: 2000, effect: (id: number) => incrementAutoClick(id, 1).then((response) => setCurrentUser((prevState) => ({...prevState, auto_clicker: prevState.auto_clicker + 1,})))},
+    { id: 3, name: 'Amelioration 3', cost: 1, effect: (id: number) => alert("Amelioration 3")},
+    { id: 4, name: 'Amelioration 4', cost: 1, effect: (id: number) => alert("Amelioration 4")}
   ]);
 
   // Fonction pour incrémenter le score
