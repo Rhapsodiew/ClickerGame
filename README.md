@@ -15,13 +15,12 @@ A basic Clicker Game built with a React (TypeScript) frontend and a NestJS backe
 - ⚛️ React
 - TypeScript
 - Axios
-- 
+
 ### Backend
 
 - 🚀 NestJS
 - JavaScript
 - RESTful API
-- In-memory store or database (e.g. SQLite, MongoDB)
 
 ## 🖥️ Frontend Setup
 
@@ -38,12 +37,6 @@ cd clicker-game-api
 npm install
 npm run start
 ```
-
-## 🧩 Future Improvements
-
-🎯 Add new upgrade in the shop
-
-🛠️ Upgrade the UX/UI
 
 ## 📄 License
 
